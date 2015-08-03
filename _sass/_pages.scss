@@ -1,0 +1,21 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+
+.right-side, .left-side{
+	width: 50vw;
+	height: 100vh;
+	float: left;
+}
+
+.left-side{
+	background: #fff url('/files/home-photo5.jpg') -30vh 0 no-repeat;
+	background-size: cover;
+	-webkit-filter: grayscale(100%); 
+	filter: grayscale(100%);
+} 
+
+.right-side{
+	background-color: #296F91;
+} 
