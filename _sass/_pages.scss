@@ -6,16 +6,41 @@ body{
 .right-side, .left-side{
 	width: 50vw;
 	height: 100vh;
-	float: left;
+	float: left; 
 }
 
 .left-side{
-	background: #fff url('/files/home-photo5.jpg') -30vh 0 no-repeat;
+	background: #fff url('/files/home-photo5.jpg') -20vh 0 repeat-x;
 	background-size: cover;
 	-webkit-filter: grayscale(100%); 
 	filter: grayscale(100%);
 } 
 
 .right-side{
-	background-color: #296F91;
+	background-color: $charcoal;
 } 
+
+.home-title {
+    border: 3px solid white;
+    margin: $box-margin;
+    width: $box-width;
+    background-color: $title-background;
+}
+
+.opening-times{
+	.day{
+		width: 100%;
+		display: block;
+		height: 4vh;
+	}
+	width: $box-width - $box-padding;
+	margin: $box-margin;
+	color: $title-colour;
+	padding: $box-padding;
+	.title{
+		float: left;
+	}
+	.times{
+		float: right;
+	}
+}
