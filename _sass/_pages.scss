@@ -1,20 +1,49 @@
+$black: #111111;
+
 body{
 	padding: 0;
 	margin: 0;
+	background-color: white;
+
 }
 
-.right-side, .left-side{
-	width: 50%;
-	height: 100vh;
-	float: left; 
+.container{
+	margin: 0 auto;
+	background-color: #dadada;
 }
 
-.left-side{
+.nav{
+	background-color: $black;
+	height: 80px;
+	width: 100%;
+}
+
+
+.header{
 	background: #fff url('/files/home-photo5.jpg') -20vh 0 repeat-x;
 	background-size: cover;
-	-webkit-filter: grayscale(100%); 
-	filter: grayscale(100%);
+	-webkit-filter: grayscale(90%); 
+	filter: grayscale(90%);
+	height: 75vh;
+	position: relative;
+	.logo{
+		background-color: white;
+		height: 30vh;
+		width: 30vh;
+		border-radius: 50%;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	span{
+			font-size: 10vh;
+	}
 } 
+
+.footer{
+	height: 200px;
+	background-color: $black;
+	width: 100%;
+}
 
 .right-side{
 	background-color: $charcoal;
@@ -25,6 +54,20 @@ body{
     margin: $box-margin;
     width: $box-width;
     background-color: $title-background;
+}
+
+.bottom-bar{
+	height: 10vh;
+	position: fixed;
+	bottom: 0;
+	background-color: black;
+	width: 100%;
+	text-align: center;
+	span{
+		color: white;
+		font-size: 6vh;
+		text-align: center;
+	}
 }
 
 .opening-times{
